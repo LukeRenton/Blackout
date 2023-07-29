@@ -1,0 +1,11 @@
+#arrow-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 20px;
+}
+
+#next-arrow{
+    margin-top: 40px;
+}
