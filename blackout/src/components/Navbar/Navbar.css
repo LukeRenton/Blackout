@@ -1,0 +1,71 @@
+.navbar_main{
+    position: absolute;
+    bottom: 30px;
+    width: 750px;
+    height: 7vh;
+    left: 30vw;
+    background:black;
+    border-radius: 20px;
+}
+
+.nav_icons_container{
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    width: 95%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+}
+
+.nav_item {
+    border-radius: 10px;
+    height: 100%;
+    color: black;
+    text-align: center;
+    padding-left: 5px;
+    padding-right: 5px;
+    transition: opacity 1s;  
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.nav_item:hover {
+    height: 100%;
+    transition: opacity 1s;  
+    text-align: center;
+}
+
+
+.nav_item i {
+    font-size: 40px;
+    transition-duration: 0.1s;
+    color: white;
+    pointer-events: none;
+}
+
+.nav_item:hover i {
+    font-size: 20px;
+    transition-duration: 0.1s;
+    color: white;
+}
+
+.nav_item label {
+    font-size: 20px;
+    opacity: 0;
+    transition: opacity 0.1s;
+    color: white;
+    pointer-events: none;
+
+}
+
+.nav_item:hover label {
+    font-size: 20px;
+    opacity: 1;
+    transition: opacity 0.1s;
+    color: white;
+}

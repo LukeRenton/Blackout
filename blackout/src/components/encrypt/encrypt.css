@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+body {
+    background-color: #000;
+    color: #FFFFFF;
+    font-family: "Courier New", monospace;
+    font-size: 24px;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .hacker-text-container #hackerText{
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 40px;
+    letter-spacing: 0.7em;
+    opacity: 1;
+    background-color: black;
+    background: none;
+    border: none;
+    shape-outside: none;
+    animation: flickerIntro 6s linear reverse;
+  }
+
+  .hacker-text-container #hackerText::after{
+    content: '';
+    width: 150%;
+    -webkit-box-shadow: -35px 0px 60px 8px rgba(255, 255, 255, 1);
+    -moz-box-shadow: -35px 0px 60px 8px rgba(255, 255, 255, 1);
+    box-shadow: -35px 0px 60px 8px rgba(255, 255, 255, 1);
+  }
+
+
+  @keyframes flickerIntro {
+    0% {
+      opacity: 0;
+    }
+    5% {
+      opacity: 0.5;
+    }
+    10% {
+      opacity: 0.6;
+    }
+    15% {
+      opacity: 0.85;
+    }
+    25% {
+      opacity: 0.5;
+    }
+    30% {
+      opacity: 1;
+    }
+    35% {
+      opacity: 0.1;
+    }
+    40% {
+      opacity: 0.25;
+    }
+    45% {
+      opacity: 0.5;
+    }
+    60% {
+      opacity: 1;
+    }
+    70% {
+      opacity: 0.85;
+    }
+    80% {
+      opacity: 0.4;
+    }
+    90% {
+      opacity: 0.5;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  

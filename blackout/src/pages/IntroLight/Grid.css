@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+.intro_grid {
+    position: absolute;
+    left:0;
+    top:0;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #000000;
+  }
+  
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-gap: 10px;
+    width: 600px;
+    justify-content: center; 
+    align-items: center; 
+  }
+  
+  .month {
+    border: 1px solid #ffffff;
+    background-color: #000000;
+    padding: 20px;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    font-size: 23px;
+    font-weight: bold;
+    color: white;
+  }
+
+
+#jan{
+    animation: fillRed 2s forwards ;
+}
+#jan{
+    animation : disappear 2s  forwards;
+}
+
+#feb{   
+    animation: fillRed 2s forwards;
+}
+#feb{
+    animation : disappear 2s  forwards;
+}
+#mar{
+    animation: fillRed 2s forwards;
+}
+#mar{
+    animation : disappear 2s  forwards;
+}
+#apr{
+    animation: fillRed 2s forwards;
+}
+#apr{
+    animation : disappear 2s  forwards;
+}
+#may{
+    animation: fillRed 2s forwards;
+}
+#may{
+    animation : disappear 2s  forwards;
+}
+
+#jun{
+    animation: fillRed 2s forwards;
+}
+#jun{
+    animation : disappear 2s  forwards;
+}
+#jul{
+    animation: fillRed 2s forwards;
+}
+#jul{
+    animation : disappear 2s  forwards;
+}
+
+  @keyframes fillRed {
+    0% {
+      background-color: transparent; /* Start with transparent */
+    }
+    100% {
+      background-color: white; /* Gradually fill with red */
+    }
+  }
+
+  @keyframes disappear {
+    0% {
+      opacity: 1; /* Start with full opacity */
+    }
+    100% {
+      opacity: 0; /* Gradually fade out */
+    }
+  }
+
+  @keyframes fadeOut {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  
+
+  .grid-container.fade-out {
+    animation: fadeOut 2s forwards;
+  }
+  

@@ -1,0 +1,39 @@
+.piechart {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 500px;
+    height: 500px;
+  }
+  
+  .piechart_image {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    animation: rotation 12s linear infinite;
+    border-radius: 100px;
+    margin-top: -20px;
+  }
+  
+  @keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .percent_number {
+    left:0;
+    top:0;
+    height: 0;
+    transform: translateY(200px);
+    width:500px;
+    font-size: 50px;
+    cursor: default;
+    text-align: center;
+    color:white
+  }

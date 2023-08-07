@@ -1,0 +1,41 @@
+.slider_back{
+    width: 35px;
+    height: 15px;
+    border: solid 0px;
+    border-radius: 20%;
+    cursor: pointer;
+    transition-duration: 1s;
+}
+
+.left_display{
+    background:white;
+
+}
+.right_display{
+    background:black;
+    
+}
+
+
+.slider_block{
+    position: relative;
+    width: 15px;
+    height: 15px;
+    border: solid 0px;
+    border-radius: 20%;
+    cursor: pointer;
+    pointer-events: none;
+}
+
+.left {
+    transform: translateX(0px);
+    background:darkgray;
+    transition-duration: 1s;
+}
+
+.right {
+    transform: translateX(20px);
+    transition-duration: 1s;
+    background:white;
+
+}
